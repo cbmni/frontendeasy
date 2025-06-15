@@ -1,92 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FrontEndEasy - Coming Soon</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      background: linear-gradient(135deg, #4e54c8, #8f94fb);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #ffffff;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .coming-soon-container {
-      max-width: 600px;
-      padding: 40px;
-      background-color: rgba(0, 0, 0, 0.3);
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
-    }
-
-    .coming-soon-container h1 {
-      font-size: 2.8rem;
-      margin-bottom: 20px;
-    }
-
-    .coming-soon-container p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .email-signup input {
-      padding: 10px;
-      width: 70%;
-      max-width: 300px;
-      border: none;
-      border-radius: 5px;
-      margin-right: 10px;
-    }
-
-    .email-signup button {
-      padding: 10px 15px;
-      background-color: #ffffff;
-      color: #4e54c8;
-      border: none;
-      border-radius: 5px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .email-signup button:hover {
-      background-color: #e0e0e0;
-    }
-
-    @media (max-width: 480px) {
-      .email-signup input {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-
-      .email-signup button {
-        width: 100%;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEndEasy - Modern Frontend Resource Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#"><span class="logo-icon"><i class="fas fa-code"></i></span> FrontEnd<span>Easy</span></a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#templates">Templates</a></li>
+                    <li><a href="#snippets">Snippets</a></li>
+                    <li><a href="#tutorials">Tutorials</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <button class="btn login-btn">Login</button>
+                    <button class="btn signup-btn">Sign Up</button>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-  <div class="coming-soon-container">
-    <h1>FrontEndEasy</h1>
-    <p>We’re working hard to launch our new website. Stay tuned!</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Elevate Your Frontend Development</h1>
+                <p>Access hundreds of ready-to-use components, templates, and code snippets to speed up your development process.</p>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for components, snippets, or templates...">
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn primary-btn">Explore Resources</button>
+                    <button class="btn secondary-btn">View Popular Snippets</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://via.placeholder.com/600x400" alt="Frontend Development Illustration" class="hero-img">
+                <div class="code-preview">
+                    <div class="code-tabs">
+                        <button class="code-tab active">HTML</button>
+                        <button class="code-tab">CSS</button>
+                        <button class="code-tab">JS</button>
+                    </div>
+                    <pre><code class="language-html">
+&lt;!-- Modern Card Component --&gt;
+&lt;div class="card"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;img src="image.jpg" alt="Card Image"&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h3&gt;Card Title&lt;/h3&gt;
+        &lt;p&gt;This is a modern card component with hover effects.&lt;/p&gt;
+        &lt;button class="btn"&gt;Learn More&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="email-signup">
-      <input type="email" placeholder="Enter your email">
-      <button>Notify Me</button>
+    <!-- Features Section -->
+    <section class="features" id="resources">
+        <div class="container">
+            <h2 class="section-title">What You'll Find Here</h2>
+            <p class="section-subtitle">Everything you need to build beautiful, responsive websites faster</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>UI Components</h3>
+                    <p>Ready-to-use buttons, cards, navbars, modals, and more with clean, modern designs.</p>
+                    <a href="#" class="feature-link">Explore Components <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Code Snippets</h3>
+                    <p>Small, reusable pieces of code for common frontend tasks and effects.</p>
+                    <a href="#" class="feature-link">Browse Snippets <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Page Templates</h3>
+                    <p>Complete page layouts for landing pages, dashboards, blogs, and more.</p>
+                    <a href="#" class="feature-link">View Templates <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Layouts</h3>
+                    <p>Flexbox and Grid layouts that work perfectly on all device sizes.</p>
+                    <a href="#" class="feature-link">See Layouts <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>CSS Effects</h3>
+                    <p>Animations, transitions, hover effects, and other visual enhancements.</p>
+                    <a href="#" class="feature-link">Discover Effects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>JavaScript Logic</h3>
+                    <p>Common JS patterns, form validation, API calls, and interactive features.</p>
+                    <a href="#" class="feature-link">Learn JS Patterns <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Resources Section -->
+    <section class="popular-resources" id="snippets">
+        <div class="container">
+            <h2 class="section-title">Popular Code Snippets</h2>
+            <p class="section-subtitle">Most downloaded and used by our community</p>
+            
+            <div class="resource-tabs">
+                <button class="resource-tab active" data-category="all">All</button>
+                <button class="resource-tab" data-category="html">HTML</button>
+                <button class="resource-tab" data-category="css">CSS</button>
+                <button class="resource-tab" data-category="js">JavaScript</button>
+                <button class="resource-tab" data-category="react">React</button>
+            </div>
+            
+            <div class="resources-grid">
+                <!-- Resources will be loaded here via JavaScript -->
+            </div>
+            
+            <div class="view-more">
+                <button class="btn outline-btn">View All Resources</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates" id="templates">
+        <div class="container">
+            <h2 class="section-title">Ready-to-Use Templates</h2>
+            <p class="section-subtitle">Complete page designs you can customize for your projects</p>
+            
+            <div class="templates-slider">
+                <div class="template-slide">
+                    <div class="template-card">
+                        <img src="https://via.placeholder.com/400x250" alt="Landing Page Template">
+                        <div class="template-info">
+                            <h3>Modern Landing Page</h3>
+                            <p>Clean, responsive landing page with hero section, features, and call-to-action.</p>
+                            <div class="template-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <button class="btn small-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-slide">
+                    <div class="template-card">
+                        <img src="https://via.placeholder.com/400x250" alt="Dashboard Template">
+                        <div class="template-info">
+                            <h3>Admin Dashboard</h3>
+                            <p>Complete dashboard with sidebar navigation, charts, and data tables.</p>
+                            <div class="template-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <button class="btn small-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-slide">
+                    <div class="template-card">
+                        <img src="https://via.placeholder.com/400x250" alt="E-commerce Template">
+                        <div class="template-info">
+                            <h3>E-commerce Store</h3>
+                            <p>Product listings, shopping cart, and checkout flow for online stores.</p>
+                            <div class="template-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                            <button class="btn small-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="template-slide">
+                    <div class="template-card">
+                        <img src="https://via.placeholder.com/400x250" alt="Blog Template">
+                        <div class="template-info">
+                            <h3>Minimal Blog</h3>
+                            <p>Elegant blog layout with featured posts, categories, and author sections.</p>
+                            <div class="template-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                            </div>
+                            <button class="btn small-btn">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Developers Say</h2>
+            <p class="section-subtitle">Join thousands of developers who accelerate their workflow with FrontEndEasy</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"FrontEndEasy has saved me countless hours of development time. The code snippets are clean, well-documented, and easy to customize."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Sarah Johnson">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Frontend Developer at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a junior developer, FrontEndEasy has been invaluable for learning modern frontend patterns while delivering professional results."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Michael Chen">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Web Developer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"I use FrontEndEasy resources in all my client projects. The templates are responsive and look great on all devices."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://via.placeholder.com/60" alt="Emma Rodriguez">
+                        <div class="author-info">
+                            <h4>Emma Rodriguez</h4>
+                            <p>Freelance Designer & Developer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Boost Your Frontend Skills?</h2>
+                <p>Join our community of developers and get access to hundreds of resources, templates, and code snippets.</p>
+                <button class="btn primary-btn large-btn">Get Started for Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3 class="footer-title">FrontEndEasy</h3>
+                    <p>The modern library for frontend developers with ready-to-use components, templates, and code snippets.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">UI Components</a></li>
+                        <li><a href="#">Code Snippets</a></li>
+                        <li><a href="#">Page Templates</a></li>
+                        <li><a href="#">CSS Effects</a></li>
+                        <li><a href="#">JavaScript Logic</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3 class="footer-title">Subscribe</h3>
+                    <p>Get the latest resources and updates delivered to your inbox.</p>
+                    <div class="subscribe-form">
+                        <input type="email" placeholder="Your email address">
+                        <button class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 FrontEndEasy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Login to Your Account</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password">
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn primary-btn full-width-btn">Login</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="btn google-btn">
+                    <i class="fab fa-google"></i> Continue with Google
+                </button>
+                <button type="button" class="btn github-btn">
+                    <i class="fab fa-github"></i> Continue with GitHub
+                </button>
+                <div class="auth-switch">
+                    Don't have an account? <a href="#" id="switch-to-signup">Sign up</a>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 
+    <!-- Signup Modal -->
+    <div class="modal" id="signupModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Create Your Account</h2>
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="signup-name">Full Name</label>
+                    <input type="text" id="signup-name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <input type="email" id="signup-email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <input type="password" id="signup-password" placeholder="Create a password">
+                </div>
+                <div class="form-group">
+                    <label for="signup-confirm">Confirm Password</label>
+                    <input type="password" id="signup-confirm" placeholder="Confirm your password">
+                </div>
+                <div class="form-options">
+                    <input type="checkbox" id="agree-terms">
+                    <label for="agree-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn primary-btn full-width-btn">Create Account</button>
+                <div class="auth-divider">
+                    <span>or</span>
+                </div>
+                <button type="button" class="btn google-btn">
+                    <i class="fab fa-google"></i> Continue with Google
+                </button>
+                <button type="button" class="btn github-btn">
+                    <i class="fab fa-github"></i> Continue with GitHub
+                </button>
+                <div class="auth-switch">
+                    Already have an account? <a href="#" id="switch-to-login">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
